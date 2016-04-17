@@ -1,6 +1,31 @@
 exports.getMenuTemplate = function(app) {
   var template = [
     {
+      label: 'Edit',
+      submenu: [
+        {
+          label: "Copy",
+          accelerator: "CmdOrCtrl+C",
+          role: "copy"
+        },
+        {
+          label: "Paste",
+          accelerator: "CmdOrCtrl+V",
+          role: "paste"
+        },
+        {
+          label: "Cut",
+          accelerator: "CmdOrCtrl+X",
+          role: "cut"
+        },
+        {
+          label: "Select All",
+          accelerator: "CmdOrCtrl+A",
+          role: "selectall"
+        }
+      ]
+    },
+    {
       label: 'View',
       submenu: [
         {
